@@ -1,0 +1,4 @@
+.idea
+wp-config.php
+wp-content/upload
+node_modules
