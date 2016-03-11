@@ -1,7 +1,63 @@
+@import "lib/settings";
+@import "lib/fonts";
+@import "lib/general";
+
+$maxWidth: 75rem;
+
 body{
-  color: red;
-  background: peru;
+  background: #E0E6EE;
 }
-header{
-  color:tomato;
+.Header{
+  max-width: $maxWidth;
+  margin: auto;
+  position: relative;
+}
+.Header-navNetwork{
+  position: absolute;
+  left: calc(50% - 3rem);
+  transform: scale(0.75);
+  top: .5rem;
+  & li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5rem;
+  }
+  & a:hover g{
+    fill: #FFCA03
+  }
+
+}
+.Header-right{
+  position: absolute;
+  right: 0;
+  top: .5rem;
+  & input{
+    background: rgba(255,255,255,.4);
+    border: none;
+    padding: .375rem 2.5rem;
+    max-width: 16rem;
+    width: 16rem;
+    font-size: .875rem;
+  }
+  & button{
+    position: absolute;
+    top: .375rem;
+    left: .25rem;
+    @include placeholder{color:red}
+  }
+  form{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a{
+    color: white;
+    font-weight: 700;
+    &.active{
+      color: red;
+      background: #fff;
+      padding: .375rem .1875rem;
+      width: 5rem;
+      display: inline-block;
+    }
+  }
 }
