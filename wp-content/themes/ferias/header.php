@@ -32,7 +32,7 @@
                 <a href="">ES</a>
             </div>
             <li>
-                <a href="">
+                <a href="https://www.facebook.com/Circulart" target="_blank">
                     <svg width="13px" height="27px" viewBox="0 0 13 27" version="1.1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -50,7 +50,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://twitter.com/Circulart_" target="_blank">
                     <svg width="27px" height="23px" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -63,7 +63,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://www.instagram.com/circulartmc/" target="_blank">
                     <svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://www.youtube.com/channel/UCp1LtBBVxj68-drbIhJg71Q" target="_blank">
                     <svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
 

@@ -22,11 +22,11 @@ main {
 }
 
 .Header-navNetwork {
-  position: absolute;
+  position: fixed;
   transform: scale(0.75);
   top: .5rem;
-  left: 2.5rem;
-  z-index: 2;
+  left: 4rem;
+  z-index: 5;
   opacity: 0;
   @include transition(all .6s);
   & li {
@@ -41,6 +41,7 @@ main {
     display: block;
     left: calc(50% - 2.5rem);
     opacity: 1;
+    position: absolute;
   }
   @include respond-to(large) {
     display: block;
@@ -103,6 +104,14 @@ main {
     max-height: 340px;
     background: #EE2E6A;
     position: relative;
+    margin: auto;
+    height: 320px;
+    max-width: 320px;
+    @include respond-to(middle){
+      height: auto;
+      max-width: inherit;
+      margin: inherit;
+    }
   }
   & span {
     position: absolute;
@@ -160,11 +169,11 @@ main {
 .menu-menuheader-container {
   padding: 6rem 1.5rem 2rem;
   max-width: 72rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: #F8CA33;
-  z-index: 1;
+  z-index: 2;
   @include transform(translateX(-17rem));
   @include transition(all .4s);
   @include respond-to(middle) {
@@ -278,9 +287,20 @@ main {
   & figure {
     padding: 0 1rem;
     max-width: 11rem;
+    margin: .5rem auto;
+    @include respond-to(middle) {
+      max-width: 11rem;
+    }
+    &:nth-child(2) {
+      padding: 0 2rem;
+      margin: .5rem auto;
+    }
   }
   & div {
-    text-align: right;
+    text-align: center;
+    @include respond-to(middle) {
+      text-align: right;
+    }
   }
   & svg {
     max-width: 3rem;

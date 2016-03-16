@@ -54,7 +54,7 @@ $totalContainer: 100%;
   flex: 0 0 auto;
 }
 
-@for $i from 1 through $columns - 1 {
+@for $i from 1 through $columns {
 
   .cols-#{$i} {
     -ms-flex-preferred-size: ($i / $columns) * 100%;
@@ -63,21 +63,29 @@ $totalContainer: 100%;
     max-width: ($i / $columns) * 100%;
   }
 }
-@include respond-to(middle){
-  @for $i from 1 through $columns - 1 {
+
+@include respond-to(middle) {
+  @for $i from 1 through $columns {
     .col-#{$i} {
       -ms-flex-preferred-size: ($i / $columns) * 100%;
       -webkit-flex-basis: ($i / $columns) * 100%;
       flex-basis: ($i / $columns) * 100%;
       max-width: ($i / $columns) * 100%;
     }
-
   }
 }
 
-@for $i from 1 through $columns - 1 {
-  .offset-#{$i} {
+@for $i from 0 through $columns {
+  .offsetSmall-#{$i} {
     margin-left: ($totalContainer / $columns) * $i
+  }
+}
+
+@include respond-to(middle) {
+  @for $i from 0 through $columns {
+    .offset-#{$i} {
+      margin-left: ($totalContainer / $columns) * $i
+    }
   }
 }
 

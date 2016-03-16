@@ -8,7 +8,7 @@ $my_query = new WP_Query('category_name=noticias&showposts=10'); ?>
             $back = get_post_custom_values('fondo', $post->ID)[0];
             $color = get_post_custom_values('color', $post->ID)[0];
             ?>
-            <li class="col-4 cols-6 row middle end" style='background : <?php echo $back ?>'>
+            <li class="col-4 cols-12 row middle end" style='background : <?php echo $back ?>'>
                 <a href=" <?php echo get_permalink($post->ID) ?>">
                     <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
