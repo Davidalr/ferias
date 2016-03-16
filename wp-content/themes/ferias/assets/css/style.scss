@@ -110,7 +110,7 @@ main {
     @include respond-to(middle){
       height: auto;
       max-width: inherit;
-      margin: inherit;
+      margin: 0;
     }
   }
   & span {
@@ -212,7 +212,10 @@ main {
 
 .Contact {
   & .wpcf7 {
-    text-align: right;
+    @include respond-to(middle) {
+      text-align: right;
+    }
+
   }
   & form {
     color: #EE2F59;
@@ -228,18 +231,22 @@ main {
     font-size: 1.25rem;
     line-height: 15px;
     display: inline-block;
-    border-bottom: 1px solid;
+    @include respond-to(middle) {
+      border-bottom: 1px solid;
+    }
   }
   & input, & textarea {
     background: rgba(0, 0, 0, 0);
     border: 1px #0AB7BF solid;
     padding: .25rem;
-    width: 35rem;
-    margin-left: 1rem;
+    width: 100%;
     vertical-align: top;
     font-weight: normal;
     color: #2f2f2f;
-    padding: .5rem;
+    @include respond-to(middle) {
+      width: 35rem;
+      margin-left: 1rem;
+    }
   }
   & input[type='submit'] {
     background: #EE2F59;
